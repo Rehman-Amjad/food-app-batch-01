@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_demo/splash_screen.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
+import 'login_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: SplashScreen(),
+      home: LoginScreen(),
     );
   }
 }

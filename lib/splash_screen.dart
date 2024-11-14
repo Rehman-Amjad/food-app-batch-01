@@ -15,13 +15,12 @@ class SplashScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
 
-
                 InkWell(
                   onTap: (){
                     print("Text Click");
                   },
-                  child: Text(
-                    "Login",style: TextStyle(
+                  child: const Text(
+                    "Login", style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 30
