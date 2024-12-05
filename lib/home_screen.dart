@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:food_demo/home_screen.dart';
+import 'package:food_demo/login_screen.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
@@ -17,10 +17,10 @@ class _LoginScreenState extends State<LoginScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-
+          
               SizedBox(width: width,height: 20,),
 
-              Text("Login Screen",style: TextStyle(
+              Text("Home Screen",style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),),
@@ -31,9 +31,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator
                         .pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context)=> HomeScreen()));
+                        MaterialPageRoute(builder: (context)=> LoginScreen()));
                   },
-                  child: Text("Move To Home Screen")
+                  child: Text("Back To Login")
               )
             ],
           ),
