@@ -1,34 +1,22 @@
 
+import 'dart:io';
+
+import 'package:food_demo/My_Classes/calculator.dart';
+
 void main(){
 
-  // 4 type
-  // int  (34)
-  // double  (15.5)
-  // String  "Hello world"
-  // var
-  // bool
+  int num1 = 0, num2 = 0;
 
-  int number = 120;
+  //class initialization
+  final calculator = Calculator();
 
-  number = 40;
+  stdout.write("Enter Number1: ");
+  num1 = int.parse(stdin.readLineSync().toString());
 
-  number = 450;
+  stdout.write("Enter Number2: ");
+  num2 = int.parse(stdin.readLineSync().toString());
 
-  double salary = 240.5;
-
-  String name = "Hello world";
-
-
-
-  bool isOnline = true;
-
-
-  var num = 450.6;
-
-  print("Number = $number");
-  print("salary =  $salary");
-  print("Name =  $name");
-  print("num =  $num");
+  calculator.sumValue(num1, num2);
 
 
 }
