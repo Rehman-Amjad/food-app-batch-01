@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_demo/type_screen.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 import 'login_screen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: LoginScreen(),
+      home: TypeScreen(),
     );
   }
 }
